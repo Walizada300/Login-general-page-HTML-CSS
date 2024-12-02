@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دانشگاه بدخشان</title>
+    <link rel="icon" href="پوهنتون بدخشان.jpg" type="image/x-icon">
+    <style>
+@font-face {
+    font-family: is;
+    src: url(IranSanse.ttf);
+}
+*{
+    scroll-behavior: smooth;
+    scroll-padding: 3rem;
+}
+body{
+     padding: 0;
+     margin: 0;
+     direction: rtl;
+}
+.header {
+    background: url("images/headerBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 757px;
+}
+.logo{
+    float: left;
+    margin: 40px;
+    margin-left: 50px;
+}
+nav{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+}
+.main-menu{
+    margin-right: 100px;
+    margin-top: 30px;
+    direction: rtl;
+}
+.main-menu .menu-item{
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.menu-item a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 0 2px;
+    font-family: is;
+    padding: 8px 15px;
+}
+.menu-item a:hover{
+    background-color: #93A5FF;
+    border-radius: 15px 15px 5px 5px;
+}
+.header-text{
+    margin: 50px 150px;
+}
+.header-text h1{
+    color: white;
+    font-family: is;
+}
+span{
+    color: orange;
+}
+.header-text input{
+    background-color: #384170;
+    color: #fff;
+    padding: 8px 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 390px;
+    width: 100%;
+    outline: none;
+    border: 2px solid orange;
+    font-size: 20px;
+    font-family: is;
+
+}
+.header-text button{
+    background-color: orange;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px 0 0 5px;
+    margin-right: -10px;
+    max-width: 150px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family: is;
+}
+.header-text button:hover {
+    background-color: rgb(184, 120, 3);
+}
+.photo{
+    position: absolute;
+    left: 0;
+    top: 1;
+}
+.img{
+    position: absolute;
+    left: 0;
+}
+section{
+    text-align: center;
+}
+.plan {
+    color: #2E2E2E;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 15%);
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+    margin: 20px 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.plan:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.plan .imagePhoto{
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 30px;
+}
+.plan #imageBaes{
+    background-image: url(Abdul\ Baes\ Walizada.PNG);
+    background-size: cover;
+}
+.plan #imageNasir{
+    background-image: url(M\ Nasir.PNG);
+    background-size: cover;
+}
+.plan #imageShams{
+    background-image: url(Shams.PNG);
+    background-size: cover;
+}
+.plan label{
+    display: inline-block;
+    margin-top: 16px;
+    font-weight: bold;
+    font-family: is;
+    border-bottom: 2px dotted black;
+    padding-bottom: 6px;
+}
+section h2{
+    font-family: is;
+    border: 2px dotted black;
+    width: 40%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 0 10px 0 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 45%);
+}
+.plan p{
+    margin: 20px 30px;
+    font-family: is;
+    direction: rtl;
+}
+section .comment{
+    text-align: right;
+    padding: 30px 50px;
+}
+.comment input[type=email], textarea{
+    font-size: 20px;
+    font-family: is;
+    padding: 5px 10px;
+    width: 50%;
+    margin-bottom: 10px;
+    border: 2px solid rgb(34, 34, 34);
+    outline: none;
+    border-radius: 5px;
+}
+.comment input[type=email]:focus, textarea:focus{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 35%);
+}
+.comment input[type=submit]{
+    background-color: orange;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    max-width: 150px;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family: is;
+}
+.comment input[type=submit]:hover{
+box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 45%);
+cursor: pointer;
+}
+footer{
+    background: url("images/footer_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 547px;
+    font-family: is;
+}
+footer div{
+    float: left;
+    text-align: right;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+footer div h3{
+    color: white;
+    border-bottom: 2px dotted white;
+    padding-bottom: 10px;
+}
+footer div a{
+    color: white;
+    text-decoration: none;
+}
+footer div a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+footer .social{
+    text-align: center;
+    margin-top: 225px;
+    margin-left: 250px;
+}
+footer .right{
+    position: absolute;
+    margin-top: 480px;
+    margin-right: 520px;
+    color: white;
+    font-weight: bold;
+}
+.leftRight{
+    margin-bottom: 70px;
+    transition: all 1s;
+}
+.leftRight:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+    cursor: pointer;
+}
+#leftFor{
+    transform: rotate(180deg); 
+}
+#leftFor:hover{
+    transform: rotate(540deg);
+    transition: all 1s;
+}
+.social a img{
+    transition: all 1s;
+}
+.social a img:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <ul class="main-menu">
+                    <li class="menu-item"><a href="#" style="background-color: #93A5FF;
+                        border-radius: 15px 15px 5px 5px;">صفحه اصلی</a></li>
+                    <li class="menu-item"><a href="#comment">خدمات</a></li>
+                    <li class="menu-item"><a href="login.html">ثبت و ورود</a></li>
+                    <li class="menu-item"><a href="#">درباره ما</a></li>
+                </ul>
+            </nav>
+            <div class="img"><img src="images/dotted_square.png"></div>
+            <div class="header-text">
+                <h1><span>به ویب سایت انترنیتی</span> دانشگاه بدخشان خوش آمدید!</h1>
+                <input type="text" placeholder="اینجا جستجو کنید">
+                <button>جستجو</button>
+            </div>
+            <div class="photo">
+                <img src="images/header.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <section id="comment">
+        <h2>نظرات بازدیدکننده گان</h2>
+        <img src="icons8_back_to_50px.png" width="44" style="margin-left: 40px;" id="leftFor" class="leftRight">
+        <div class="plan">
+            <div class="imagePhoto" id="imageNasir"></div>
+            <label>محمد ناصر ولی زاده</label>
+            <p>ویب سایت تان واقعاً عالی دیزاین شده است، به امید موفقیت های بیشتر شما! تشکر.</p>
+        </div>
+        <div class="plan">
+           <div class="imagePhoto" id="imageBaes">
+           </div>
+           <label>عبدالباعث ولی زاده</label>
+           <p>این ویب سایت یک سایت عالی است، به امید موفقیت دانشگاه بدخشان. تشکر!</p>
+        </div>
+        <div class="plan">
+            <div class="imagePhoto" id="imageShams"></div>
+            <label>شمس الله شریفی</label>
+            <p>این ویب سایت شما عالی است، لطفاً یک کمی موضوعات بیشتر را اپلود نماید. تشکر!</p>
+        </div>
+        <img src="icons8_back_to_50px.png" width="44" class="leftRight" style=" margin-right: 40px;">
+        <div class="comment">
+            <h2 style="text-align: center; width: 30%; margin-bottom: 40px;">نظری بنویسید</h2>
+            <form action="">
+                <input type="email" name="email" placeholder="ایمیل تانر وارد نماید"><br>
+                <textarea name="comment" cols="10" rows="10" placeholder="نظرتان را تایپ کنید..."></textarea><br>
+                <input type="submit" value="ارسال">
+            </form>
+        </div>
+        
+        <div class="icon">
+            <img src="images/Logos.png">
+        </div>
+    </section>
+    <footer>
+        <div class="service">
+            <h3>خدمات</h3>
+            <a href="#">بازدید امکانات</a><br>
+            <a href="#">بازدید تایم ها</a><br>
+            <a href="#">بازدید ترانسپورت</a>
+        </div>
+        <div class="about">
+            <h3>درباره</h3>
+            <a href="#">درباره ما</a><br>
+            <a href="#">ارتباط با ما</a>
+        </div>
+        <div class="go">
+            <h3>برویم</h3>
+            <a href="#">برویم به صفحه اصلی</a><br>
+            <a href="#">رفتن به صفحه ثبت نام</a><br>
+            <a href="#">رفتن به وسط صفحه</a>
+        </div>
+        <div class="social">
+                <a href="#"><img src="icons8_facebook_circled_50px.png"></a>
+                <a href="#"><img src="icons8_instagram_logo_50px.png"></a>
+                <a href="#"><img src="icons8_twitter_50px.png"></a>
+                <a href="#"><img src="icons8_telegram_app_50px.png"></a>
+                <a href="#"><img src="icons8_whatsapp_50px.png"></a><br>
+                <a href="#">پالیسی خصوصی |</a>
+                <a href="#">دوره های خدمات</a>
+        </div>
+        <div class="right">
+            <label>تمام حقوق و امتیازات آن محفوظ است.</label>
+        </div>
+    </footer>
+</body>
+</html>

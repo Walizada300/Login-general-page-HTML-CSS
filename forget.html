@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دانشگاه بدخشان</title>
+    <link rel="icon" href="پوهنتون بدخشان.jpg" type="image/x-icon">
+    <style>
+@font-face {
+    font-family: is;
+    src: url(IranSanse.ttf);
+}
+body {
+    background: url("images/headerBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 100px;
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    font-family: is;
+}
+.logo{
+    float: left;
+    margin-top: -10px;
+    margin-left: 50px;
+}
+.loginForm{
+    height: 370px;
+    width: 350px;
+    margin: auto;
+    margin-top: 80px;
+    border-bottom: 10px solid orange;
+    border-top: 10px solid orange;
+    border-radius: 30px;
+    padding: 30px 40px;
+    text-align: center;
+}
+.loginForm h3{
+    color: white;
+    font-size: 30px;
+}
+.loginForm input[type=text]{
+    padding: 7px 20px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 40px;
+    border: none;
+    margin-bottom: 20px;
+    font-family: is;
+    width: 90%;
+    background-color: #182047;
+    color: white;
+}
+
+.loginForm label{
+    color: white;
+    display: block;
+}
+.loginForm input[type=submit]{
+    font-size: 18px;
+    font-family: is;
+    padding: 7px 20px;
+    width: 250px;
+    outline: none;
+    border: none;
+    background-color: orange;
+    border-radius: 40px;
+    color: white;
+}
+.loginForm input[type=submit]:hover{
+    background-color: rgb(182, 120, 5);
+}
+.loginForm a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 20px;
+}
+.loginForm a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+    </style>
+
+</head>
+<body>
+    <div class="header">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+             <div class="loginForm">
+                <h3>رمز ورود فراموشم شده</h3>
+                <form action="">
+                    <input type="text" name="email" id="email" placeholder="شماره تلفون یا ایمیل تانرا وارد نماید" autocomplete="off" required><br>
+                    <label>به ایمیل یا شماره تلفون شما یک کود چهار رقمی ارسال میشود، آنرا وارد نماید.</label><br>
+                    <input type="submit" value="کود را ارسال نماید" onclick="openLogin()">
+                </form>
+                <a href="login.html">برو به صفحه ورودی</a>
+             </div>
+    </div>
+          
+</body>
+</html>
